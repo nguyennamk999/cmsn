@@ -21,9 +21,17 @@
             <img src="gip.gif" alt="Placeholder Image">
             <canvas id="canvas"></canvas>
         </div>
+        <audio id="audioPlayer" src="./cmsn.mp3" preload="auto"></audio>
     </div>
 
     <script src="./script.js"></script>
+    <script>
+        const audioPlayer = document.getElementById('audioPlayer');
+
+        document.addEventListener('click', function() {
+            audioPlayer.play();
+        });
+    </script>
 </body>
 
 </html>
